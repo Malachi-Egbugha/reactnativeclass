@@ -8,21 +8,25 @@ export const styles = StyleSheet.create(
     container: {
       flex: 1,
       flexDirection:"column",
-      backgroundColor: '#ff0000',
+      backgroundColor: '#ffffff',
       justifyContent: "center",
       width:screenDimensions
-    
     },
     logo:{
-      flex: 3,
-      backgroundColor:colors.primary,
+      flex: 2,
       justifyContent:"center",
       alignItems:"center"
   
     },
     logincontent:{
-      flex: 2,
-      backgroundColor: "0000ff"
+      backgroundColor:"red",
+      flex: 3,
+      justifyContent:"center",
+      alignItems:"center",
+      paddingVertical:20,
+      paddingHorizontal: 5,
+      gap: 10
+      
     },
     forgotpassword:{
       flex: 1,
@@ -39,6 +43,8 @@ export const styles = StyleSheet.create(
     imagelogo:{
       width:100,
     }
+ 
+    
   
   }
   );
