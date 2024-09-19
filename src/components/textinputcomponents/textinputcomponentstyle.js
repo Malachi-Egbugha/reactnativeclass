@@ -11,6 +11,8 @@ input:{
     borderRadius: 7,
     height: 50,
     borderColor : "#000000",
+     backgroundColor: "#ffffff"
+    
  
   },
   inputparent:{
@@ -18,13 +20,14 @@ input:{
     width: "80%",
     padding:5,
     justifyContent:"center",
-    alignItems: "center"
+    alignItems: "center",
+   
 
   },
   label:{
     textAlign: "left", 
     width:"100%",
-    fontWeight: 20
+    fontWeight: 900
   }
   }
 )

@@ -5,10 +5,11 @@ const screenDimensions = Dimensions.get('screen').width;
 export const styles = StyleSheet.create(
     {
         //style con
+    /////login screen style////////////
     container: {
       flex: 1,
       flexDirection:"column",
-      backgroundColor: '#ffffff',
+      backgroundColor: '#aeaeae',
       justifyContent: "center",
       width:screenDimensions
     },
@@ -19,7 +20,6 @@ export const styles = StyleSheet.create(
   
     },
     logincontent:{
-      backgroundColor:"red",
       flex: 3,
       justifyContent:"center",
       alignItems:"center",
@@ -34,7 +34,8 @@ export const styles = StyleSheet.create(
     },
     signupbutton:{
       flex: 1,
-      backgroundColor:"#dadada"
+      justifyContent:"center",
+      alignItems:"center"
     },
     logofooter:{
       flex: 1,
@@ -42,7 +43,14 @@ export const styles = StyleSheet.create(
     },
     imagelogo:{
       width:100,
+    },
+
+    loginheader:{
+      textAlign:"center",
+      fontWeight: 900
+      
     }
+
  
     
   
