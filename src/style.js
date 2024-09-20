@@ -30,7 +30,10 @@ export const styles = StyleSheet.create(
     },
     forgotpassword:{
       flex: 1,
-      backgroundColor: "yellow"
+      flexDirection: "row",
+      gap: 10,
+      justifyContent: "center",
+      alignItems:"center"
     },
     signupbutton:{
       flex: 1,
@@ -48,6 +51,17 @@ export const styles = StyleSheet.create(
     loginheader:{
       textAlign:"center",
       fontWeight: 900
+      
+    },
+    noaccount:{
+      fontSize: 14,
+      textAlign: "center",
+      color: "rgb(255,255,255)"
+
+    },
+    signup:{
+      color:"#0000ff",
+      fontWeight: 700,
       
     }
 

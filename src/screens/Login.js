@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Text, View, TextInput, Image, SafeAreaView, Dimensions, Button } from 'react-native';
+import {  Text, View, TextInput, Image, SafeAreaView, Dimensions, Button, Pressable } from 'react-native';
 import logo from "../assets/images/logos.png";
 import { styles } from '../style';
 import Textinputcomponent from '../components/textinputcomponents/textinputcomponent';
@@ -9,7 +9,7 @@ const windowDimensions = Dimensions.get('window');
 const screenDimensions = Dimensions.get('screen').width;
 
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
     <SafeAreaView>
     <View style={styles.container}>
@@ -29,18 +29,27 @@ const Login = () => {
       <View style={styles.logincontent}>
        
                  
-               <Textinputcomponent labeltext="Enter your Email" />     
-               <Textinputcomponent labeltext="Enter your Password" />     
+               <Textinputcomponent labeltext="Enter your Email" issecure={false} />     
+               <Textinputcomponent labeltext="Enter your Password" issecure={true}/>     
   
         
       </View>
       <View style={styles.signupbutton}>
-       <CustomButton labeltext = "Signup"/>
+      
+       <CustomButton labeltext = "Login"/>
         
         </View>
-      <View style={styles.forgotpassword}></View>
+      <View style={styles.forgotpassword}>
+        <Text style={styles.noaccount}>Dont have an account?</Text>
+        <Pressable><Text style={styles.signup}>Signup</Text></Pressable>
+      </View>
      
-      <View style={styles.logofooter}></View>
+      <View style={styles.logofooter}>
+        <Button
+        title='go to signup'
+        onPress={()=> navigation.navigate("Signup")}
+         />
+      </View>
      
     </View>
     </SafeAreaView>
