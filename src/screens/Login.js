@@ -41,14 +41,11 @@ const Login = ({navigation}) => {
         </View>
       <View style={styles.forgotpassword}>
         <Text style={styles.noaccount}>Dont have an account?</Text>
-        <Pressable><Text style={styles.signup}>Signup</Text></Pressable>
+        <Pressable onPress={()=>navigation.navigate("Signup")} ><Text  style={styles.signup}>Signup</Text></Pressable>
       </View>
      
       <View style={styles.logofooter}>
-        <Button
-        title='go to signup'
-        onPress={()=> navigation.navigate("Signup")}
-         />
+       
       </View>
      
     </View>
