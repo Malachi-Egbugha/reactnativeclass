@@ -1,6 +1,7 @@
 import React from 'react'
 import {  Text, View, TextInput, Image, SafeAreaView, Dimensions, Button, Pressable } from 'react-native';
 import logo from "../assets/images/logos.png";
+//import * as Location from "expo-location";
 import { styles } from '../style';
 import Textinputcomponent from '../components/textinputcomponents/textinputcomponent';
 import CustomButton from '../components/CustomButton/CustomButton';
