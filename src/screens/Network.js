@@ -27,7 +27,7 @@ const Network = () => {
   return (
     <View>
         {connect?
-      <Text>Connect</Text>:<Text>Disconnected</Text>
+      <Text>Connect</Text>:<Text></Text>
     }
     </View>
   )
